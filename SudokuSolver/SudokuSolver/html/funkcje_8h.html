@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SudokuSolver: Dokumentacja pliku C:/Users/julia/source/repos/bf7a437d-gr31-repo/projekt/SudokuSolver/SudokuSolver/funkcje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SudokuSolver
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_da92606663f4ecb03aa66c183f15dac3.html">repos</a></li><li class="navelem"><a class="el" href="dir_23ace91c7db6db0437a3754aaf2586fe.html">bf7a437d-gr31-repo</a></li><li class="navelem"><a class="el" href="dir_d598653b30fdd466cc81bf7156a5bbc6.html">projekt</a></li><li class="navelem"><a class="el" href="dir_4501200ddc9bba3a1239bb90c7dbd639.html">SudokuSolver</a></li><li class="navelem"><a class="el" href="dir_bcbb18563017b76c38032aa829c12351.html">SudokuSolver</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku funkcje.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div>
+<p><a href="funkcje_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_wsp.html">Wsp</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">struct <a class="el" href="struct_wsp.html" title="struct Wsp Reprezentuje współrzędne zawartości pola planszy sudoku.">Wsp</a> Reprezentuje współrzędne zawartości pola planszy sudoku.  <a href="struct_wsp.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a7853350b8ca5ff4a3d61ccdd22df1c2d"><td class="memItemLeft" align="right" valign="top"><a id="a7853350b8ca5ff4a3d61ccdd22df1c2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a7853350b8ca5ff4a3d61ccdd22df1c2d">pomoc</a> ()</td></tr>
+<tr class="memdesc:a7853350b8ca5ff4a3d61ccdd22df1c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyświetla pomoc. <br /></td></tr>
+<tr class="separator:a7853350b8ca5ff4a3d61ccdd22df1c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e5df53dd086528cdce188fa348f327"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#af8e5df53dd086528cdce188fa348f327">wczytajZnak</a> (ifstream &amp;plik, int x)</td></tr>
+<tr class="memdesc:af8e5df53dd086528cdce188fa348f327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje kolejny znak z pliku tekstowego oddzielony separatorem ';'.  <a href="funkcje_8h.html#af8e5df53dd086528cdce188fa348f327">Więcej...</a><br /></td></tr>
+<tr class="separator:af8e5df53dd086528cdce188fa348f327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff30619adff844bbaeba8078928914d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#aff30619adff844bbaeba8078928914d7">dodajWsp</a> (int tab[9][9], vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;wspolrzedne, int x, int y)</td></tr>
+<tr class="memdesc:aff30619adff844bbaeba8078928914d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dodaje do wektora współrzędne pola, w którym znajduję się znak ,,x'' reprezentujący niewypełnione pole w sudoku.  <a href="funkcje_8h.html#aff30619adff844bbaeba8078928914d7">Więcej...</a><br /></td></tr>
+<tr class="separator:aff30619adff844bbaeba8078928914d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6792fc8bfd17bd621b16c47a1e8bd71f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a6792fc8bfd17bd621b16c47a1e8bd71f">wczytajKomorke</a> (ifstream &amp;plikwe, int tab[9][9], int x, int y, vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;wspolrzedne)</td></tr>
+<tr class="memdesc:a6792fc8bfd17bd621b16c47a1e8bd71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje z pliku tekstowego wartości znajdujące się w polach planszy sudoku oraz zapisuje współrzędne pól planszy, które trzeba uzupełnić.  <a href="funkcje_8h.html#a6792fc8bfd17bd621b16c47a1e8bd71f">Więcej...</a><br /></td></tr>
+<tr class="separator:a6792fc8bfd17bd621b16c47a1e8bd71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b2a82748ed6506badd911b52c748174"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a3b2a82748ed6506badd911b52c748174">wczytaj</a> (int tab[9][9], vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;wspolrzedne, string sciezka)</td></tr>
+<tr class="memdesc:a3b2a82748ed6506badd911b52c748174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wczytuje sudoku do rozwiązania.  <a href="funkcje_8h.html#a3b2a82748ed6506badd911b52c748174">Więcej...</a><br /></td></tr>
+<tr class="separator:a3b2a82748ed6506badd911b52c748174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a725139de2082047ef3f76ba198b7418d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a725139de2082047ef3f76ba198b7418d">istniejeWWierszu</a> (int tab[9][9], <a class="el" href="struct_wsp.html">Wsp</a> &amp;w, int wartosc)</td></tr>
+<tr class="memdesc:a725139de2082047ef3f76ba198b7418d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy dana wartość istnieje w wierszu.  <a href="funkcje_8h.html#a725139de2082047ef3f76ba198b7418d">Więcej...</a><br /></td></tr>
+<tr class="separator:a725139de2082047ef3f76ba198b7418d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7395ac70acfdbfc5525a243e7bacf8e5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a7395ac70acfdbfc5525a243e7bacf8e5">istniejeWKolumnie</a> (int tab[9][9], <a class="el" href="struct_wsp.html">Wsp</a> &amp;w, int wartosc)</td></tr>
+<tr class="memdesc:a7395ac70acfdbfc5525a243e7bacf8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy dana wartość istnieje w kolumnie.  <a href="funkcje_8h.html#a7395ac70acfdbfc5525a243e7bacf8e5">Więcej...</a><br /></td></tr>
+<tr class="separator:a7395ac70acfdbfc5525a243e7bacf8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4376077942141bc3888a2841e9919f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a9e4376077942141bc3888a2841e9919f">poczatekKwadratu</a> (int liczba)</td></tr>
+<tr class="memdesc:a9e4376077942141bc3888a2841e9919f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wskazuje gdzie zaczyna się kwadrat, w którym nie mogą powtórzyć się liczby.  <a href="funkcje_8h.html#a9e4376077942141bc3888a2841e9919f">Więcej...</a><br /></td></tr>
+<tr class="separator:a9e4376077942141bc3888a2841e9919f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa0737350756e0b2c2a0267e9afd642"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a0aa0737350756e0b2c2a0267e9afd642">istniejeWKwadracie</a> (int tab[9][9], <a class="el" href="struct_wsp.html">Wsp</a> &amp;w, int wartosc)</td></tr>
+<tr class="memdesc:a0aa0737350756e0b2c2a0267e9afd642"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy dana wartość istnieje w kwadracie.  <a href="funkcje_8h.html#a0aa0737350756e0b2c2a0267e9afd642">Więcej...</a><br /></td></tr>
+<tr class="separator:a0aa0737350756e0b2c2a0267e9afd642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f94d3fd030ce3d2ae3a1a43f805e17"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ad7f94d3fd030ce3d2ae3a1a43f805e17">wartoscPrawidlowa</a> (int tab[9][9], <a class="el" href="struct_wsp.html">Wsp</a> &amp;w, int wartosc)</td></tr>
+<tr class="memdesc:ad7f94d3fd030ce3d2ae3a1a43f805e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy dana wartość nie występuje w wierszu, kolumnie oraz kwadracie i zwraca wartość true, w przeciwnym wypadku false.  <a href="funkcje_8h.html#ad7f94d3fd030ce3d2ae3a1a43f805e17">Więcej...</a><br /></td></tr>
+<tr class="separator:ad7f94d3fd030ce3d2ae3a1a43f805e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3d65fe27658b4e1d25d044b3753e903"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ab3d65fe27658b4e1d25d044b3753e903">zwiekszWartosc</a> (int tab[9][9], <a class="el" href="struct_wsp.html">Wsp</a> &amp;w)</td></tr>
+<tr class="memdesc:ab3d65fe27658b4e1d25d044b3753e903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Próbuje dopasować kolejne liczby do pola.  <a href="funkcje_8h.html#ab3d65fe27658b4e1d25d044b3753e903">Więcej...</a><br /></td></tr>
+<tr class="separator:ab3d65fe27658b4e1d25d044b3753e903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a182ed65dab00f7ff9ce5d668f461a4bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a182ed65dab00f7ff9ce5d668f461a4bc">rozwiaz</a> (int tab[9][9], vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;wspolrzedne)</td></tr>
+<tr class="memdesc:a182ed65dab00f7ff9ce5d668f461a4bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rozwiązująca sudoku.  <a href="funkcje_8h.html#a182ed65dab00f7ff9ce5d668f461a4bc">Więcej...</a><br /></td></tr>
+<tr class="separator:a182ed65dab00f7ff9ce5d668f461a4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e2edb7821ad8633f5ba616247157b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ab2e2edb7821ad8633f5ba616247157b3">zapiszWynik</a> (int tab[9][9], string sciezka)</td></tr>
+<tr class="memdesc:ab2e2edb7821ad8633f5ba616247157b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zapisuje rozwiązane sudoku do pliku tekstowego.  <a href="funkcje_8h.html#ab2e2edb7821ad8633f5ba616247157b3">Więcej...</a><br /></td></tr>
+<tr class="separator:ab2e2edb7821ad8633f5ba616247157b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8950b66551f81daeb4431c9abb86e2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ad8950b66551f81daeb4431c9abb86e2f">wypiszWynik</a> (int tab[9][9])</td></tr>
+<tr class="memdesc:ad8950b66551f81daeb4431c9abb86e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wypisuje do konsoli planszę sudoku.  <a href="funkcje_8h.html#ad8950b66551f81daeb4431c9abb86e2f">Więcej...</a><br /></td></tr>
+<tr class="separator:ad8950b66551f81daeb4431c9abb86e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="aff30619adff844bbaeba8078928914d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff30619adff844bbaeba8078928914d7">&#9670;&nbsp;</a></span>dodajWsp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dodajWsp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wspolrzedne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dodaje do wektora współrzędne pola, w którym znajduję się znak ,,x'' reprezentujący niewypełnione pole w sudoku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">wpsolrzedne</td><td>wektor zawierający dane utworzone na podstawie struktury <a class="el" href="struct_wsp.html" title="struct Wsp Reprezentuje współrzędne zawartości pola planszy sudoku.">Wsp</a> </td></tr>
+    <tr><td class="paramname">x</td><td>współrzędna kolumny </td></tr>
+    <tr><td class="paramname">y</td><td>współrzędna wiersza </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7395ac70acfdbfc5525a243e7bacf8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7395ac70acfdbfc5525a243e7bacf8e5">&#9670;&nbsp;</a></span>istniejeWKolumnie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool istniejeWKolumnie </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wsp.html">Wsp</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wartosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy dana wartość istnieje w kolumnie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">w</td><td>współrzędne, dla których dla danego wiersza sprawdzane jest czy zadana wartość występuję w kolejnych kolumnach </td></tr>
+    <tr><td class="paramname">wartosc</td><td>wartość do sprawdzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0aa0737350756e0b2c2a0267e9afd642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0aa0737350756e0b2c2a0267e9afd642">&#9670;&nbsp;</a></span>istniejeWKwadracie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool istniejeWKwadracie </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wsp.html">Wsp</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wartosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy dana wartość istnieje w kwadracie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">w</td><td>współrzędne, dla których sprawdzane jest czy dana wartość istnieje w kwadracie </td></tr>
+    <tr><td class="paramname">wartosc</td><td>wartość do sprawdzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a725139de2082047ef3f76ba198b7418d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a725139de2082047ef3f76ba198b7418d">&#9670;&nbsp;</a></span>istniejeWWierszu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool istniejeWWierszu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wsp.html">Wsp</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wartosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy dana wartość istnieje w wierszu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">w</td><td>współrzędne, dla których dla danej kolumny sprawdzane jest czy zadana wartość występuję w kolejnych wierszach </td></tr>
+    <tr><td class="paramname">wartosc</td><td>wartość do sprawdzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9e4376077942141bc3888a2841e9919f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e4376077942141bc3888a2841e9919f">&#9670;&nbsp;</a></span>poczatekKwadratu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int poczatekKwadratu </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>liczba</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wskazuje gdzie zaczyna się kwadrat, w którym nie mogą powtórzyć się liczby. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">liczba</td><td>sprawdza gdzie dla danej wartość znajduję się początek kwadratu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a182ed65dab00f7ff9ce5d668f461a4bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a182ed65dab00f7ff9ce5d668f461a4bc">&#9670;&nbsp;</a></span>rozwiaz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool rozwiaz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wspolrzedne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja rozwiązująca sudoku. </p>
+<p>Testuje kolejne możliwe wartośći, dla każdego z pól, które jest nieuzupełnione. Jeśli znajdzie wszystkie poprawne wartości zwraca true i sudoku jest rozwiązane. Jeśli nie można dla któregoś pola znaleźć poprawnej wartości to znaczy, że sudoku jest niepoprawne i funkcja zwraca false. Jeśli nie ma żadnej współrzędnej do rozwiązania, funkcja zwraca false. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">wspolrzedne</td><td>współrzędne pól, dla których trzeba znaleźć wartość </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7f94d3fd030ce3d2ae3a1a43f805e17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f94d3fd030ce3d2ae3a1a43f805e17">&#9670;&nbsp;</a></span>wartoscPrawidlowa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wartoscPrawidlowa </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wsp.html">Wsp</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wartosc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy dana wartość nie występuje w wierszu, kolumnie oraz kwadracie i zwraca wartość true, w przeciwnym wypadku false. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">w</td><td>współrzędne pola, dla którego sprawdzana jest wartość <br  />
+ </td></tr>
+    <tr><td class="paramname">wartosc</td><td>wartość do sprawdzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b2a82748ed6506badd911b52c748174"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b2a82748ed6506badd911b52c748174">&#9670;&nbsp;</a></span>wczytaj()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wczytaj </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wspolrzedne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sciezka</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje sudoku do rozwiązania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">wspolrzedne</td><td>wektor, w którym zapisywane są współrzędne niewypełnionych pól sudoku oznaczonych symbolem ,,x'' </td></tr>
+    <tr><td class="paramname">sciezka</td><td>ścieżka do wejściowego pliku tekstowego </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6792fc8bfd17bd621b16c47a1e8bd71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6792fc8bfd17bd621b16c47a1e8bd71f">&#9670;&nbsp;</a></span>wczytajKomorke()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wczytajKomorke </td>
+          <td>(</td>
+          <td class="paramtype">ifstream &amp;&#160;</td>
+          <td class="paramname"><em>plikwe</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="struct_wsp.html">Wsp</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wspolrzedne</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje z pliku tekstowego wartości znajdujące się w polach planszy sudoku oraz zapisuje współrzędne pól planszy, które trzeba uzupełnić. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plikwe</td><td>plik wejściowy zawierający sudoku do rozwiązania </td></tr>
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">x</td><td>współrzędna kolumny </td></tr>
+    <tr><td class="paramname">y</td><td>współrzędna wiersza </td></tr>
+    <tr><td class="paramname">wspolrzedne</td><td>wektor, w którym zapisywane są współrzędne niewypełnionych pól sudoku oznaczonych symbolem ,,x'' </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8e5df53dd086528cdce188fa348f327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e5df53dd086528cdce188fa348f327">&#9670;&nbsp;</a></span>wczytajZnak()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string wczytajZnak </td>
+          <td>(</td>
+          <td class="paramtype">ifstream &amp;&#160;</td>
+          <td class="paramname"><em>plik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wczytuje kolejny znak z pliku tekstowego oddzielony separatorem ';'. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">plik</td><td>plik tekstowy zawierający sudoku do rozwiązania </td></tr>
+    <tr><td class="paramname">x</td><td>współrzędna kolumny </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8950b66551f81daeb4431c9abb86e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8950b66551f81daeb4431c9abb86e2f">&#9670;&nbsp;</a></span>wypiszWynik()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wypiszWynik </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wypisuje do konsoli planszę sudoku. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab2e2edb7821ad8633f5ba616247157b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e2edb7821ad8633f5ba616247157b3">&#9670;&nbsp;</a></span>zapiszWynik()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool zapiszWynik </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>sciezka</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zapisuje rozwiązane sudoku do pliku tekstowego. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">sciezka</td><td>ścieżka do pliku, w którym ma być zapisane rozwiązane sudoku </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab3d65fe27658b4e1d25d044b3753e903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3d65fe27658b4e1d25d044b3753e903">&#9670;&nbsp;</a></span>zwiekszWartosc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool zwiekszWartosc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tab</em>[9][9], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_wsp.html">Wsp</a> &amp;&#160;</td>
+          <td class="paramname"><em>w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Próbuje dopasować kolejne liczby do pola. </p>
+<p>Jeśli wypróbowana liczba jest prawidłowa, zwraca wartość true, w przeciwnym wypadku funkcja wywołuje samą siebie i sprawdza liczbę o jeden większą. Jeśli dojdzie do liczby większej od 9, zwraca false. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tab</td><td>tablica o rozmiarze 9 na 9 reprezentująca planszę </td></tr>
+    <tr><td class="paramname">w</td><td>współrzędne pola, dla którego sprawdzana jest wartość </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,68 @@
+\begin{theindex}
+
+  \item {C:/Users/julia/source/repos/bf7a437d-\/gr31-\/repo/projekt/SudokuSolver/SudokuSolver/funkcje.h}, 
+		\hyperpage{7}
+
+  \indexspace
+
+  \item {dodajWsp}
+    \subitem {funkcje.h}, \hyperpage{8}
+
+  \indexspace
+
+  \item {funkcje.h}
+    \subitem {dodajWsp}, \hyperpage{8}
+    \subitem {istniejeWKolumnie}, \hyperpage{8}
+    \subitem {istniejeWKwadracie}, \hyperpage{9}
+    \subitem {istniejeWWierszu}, \hyperpage{9}
+    \subitem {poczatekKwadratu}, \hyperpage{9}
+    \subitem {rozwiaz}, \hyperpage{10}
+    \subitem {wartoscPrawidlowa}, \hyperpage{10}
+    \subitem {wczytaj}, \hyperpage{10}
+    \subitem {wczytajKomorke}, \hyperpage{11}
+    \subitem {wczytajZnak}, \hyperpage{11}
+    \subitem {wypiszWynik}, \hyperpage{11}
+    \subitem {zapiszWynik}, \hyperpage{12}
+    \subitem {zwiekszWartosc}, \hyperpage{12}
+
+  \indexspace
+
+  \item {istniejeWKolumnie}
+    \subitem {funkcje.h}, \hyperpage{8}
+  \item {istniejeWKwadracie}
+    \subitem {funkcje.h}, \hyperpage{9}
+  \item {istniejeWWierszu}
+    \subitem {funkcje.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {poczatekKwadratu}
+    \subitem {funkcje.h}, \hyperpage{9}
+
+  \indexspace
+
+  \item {rozwiaz}
+    \subitem {funkcje.h}, \hyperpage{10}
+
+  \indexspace
+
+  \item {wartoscPrawidlowa}
+    \subitem {funkcje.h}, \hyperpage{10}
+  \item {wczytaj}
+    \subitem {funkcje.h}, \hyperpage{10}
+  \item {wczytajKomorke}
+    \subitem {funkcje.h}, \hyperpage{11}
+  \item {wczytajZnak}
+    \subitem {funkcje.h}, \hyperpage{11}
+  \item {Wsp}, \hyperpage{5}
+  \item {wypiszWynik}
+    \subitem {funkcje.h}, \hyperpage{11}
+
+  \indexspace
+
+  \item {zapiszWynik}
+    \subitem {funkcje.h}, \hyperpage{12}
+  \item {zwiekszWartosc}
+    \subitem {funkcje.h}, \hyperpage{12}
+
+\end{theindex}

@@ -1,0 +1,5 @@
+﻿  SudokuSolver.cpp
+  funkcje.cpp
+C:\Users\julia\source\repos\bf7a437d-gr31-repo\projekt\SudokuSolver\SudokuSolver\funkcje.cpp(134,23): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  Generowanie kodu...
+  SudokuSolver.vcxproj -> C:\Users\julia\source\repos\bf7a437d-gr31-repo\projekt\SudokuSolver\Debug\SudokuSolver.exe

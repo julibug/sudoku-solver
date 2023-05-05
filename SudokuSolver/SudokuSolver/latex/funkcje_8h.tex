@@ -1,0 +1,284 @@
+\hypertarget{funkcje_8h}{}\doxysection{Dokumentacja pliku C\+:/\+Users/julia/source/repos/bf7a437d-\/gr31-\/repo/projekt/\+Sudoku\+Solver/\+Sudoku\+Solver/funkcje.h}
+\label{funkcje_8h}\index{C:/Users/julia/source/repos/bf7a437d-\/gr31-\/repo/projekt/SudokuSolver/SudokuSolver/funkcje.h@{C:/Users/julia/source/repos/bf7a437d-\/gr31-\/repo/projekt/SudokuSolver/SudokuSolver/funkcje.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_wsp}{Wsp}}
+\begin{DoxyCompactList}\small\item\em struct \mbox{\hyperlink{struct_wsp}{Wsp}} Reprezentuje współrzędne zawartości pola planszy sudoku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{funkcje_8h_a7853350b8ca5ff4a3d61ccdd22df1c2d}\label{funkcje_8h_a7853350b8ca5ff4a3d61ccdd22df1c2d}} 
+void \mbox{\hyperlink{funkcje_8h_a7853350b8ca5ff4a3d61ccdd22df1c2d}{pomoc}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla pomoc. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{funkcje_8h_af8e5df53dd086528cdce188fa348f327}{wczytaj\+Znak}} (ifstream \&plik, int x)
+\begin{DoxyCompactList}\small\item\em Wczytuje kolejny znak z pliku tekstowego oddzielony separatorem \textquotesingle{};\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_aff30619adff844bbaeba8078928914d7}{dodaj\+Wsp}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&wspolrzedne, int x, int y)
+\begin{DoxyCompactList}\small\item\em Dodaje do wektora współrzędne pola, w którym znajduję się znak ,,x\textquotesingle{}\textquotesingle{} reprezentujący niewypełnione pole w sudoku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_a6792fc8bfd17bd621b16c47a1e8bd71f}{wczytaj\+Komorke}} (ifstream \&plikwe, int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, int x, int y, vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&wspolrzedne)
+\begin{DoxyCompactList}\small\item\em Wczytuje z pliku tekstowego wartości znajdujące się w polach planszy sudoku oraz zapisuje współrzędne pól planszy, które trzeba uzupełnić. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a3b2a82748ed6506badd911b52c748174}{wczytaj}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&wspolrzedne, string sciezka)
+\begin{DoxyCompactList}\small\item\em Wczytuje sudoku do rozwiązania. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a725139de2082047ef3f76ba198b7418d}{istnieje\+WWierszu}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, \mbox{\hyperlink{struct_wsp}{Wsp}} \&w, int wartosc)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dana wartość istnieje w wierszu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a7395ac70acfdbfc5525a243e7bacf8e5}{istnieje\+WKolumnie}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, \mbox{\hyperlink{struct_wsp}{Wsp}} \&w, int wartosc)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dana wartość istnieje w kolumnie. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funkcje_8h_a9e4376077942141bc3888a2841e9919f}{poczatek\+Kwadratu}} (int liczba)
+\begin{DoxyCompactList}\small\item\em Wskazuje gdzie zaczyna się kwadrat, w którym nie mogą powtórzyć się liczby. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a0aa0737350756e0b2c2a0267e9afd642}{istnieje\+WKwadracie}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, \mbox{\hyperlink{struct_wsp}{Wsp}} \&w, int wartosc)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dana wartość istnieje w kwadracie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_ad7f94d3fd030ce3d2ae3a1a43f805e17}{wartosc\+Prawidlowa}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, \mbox{\hyperlink{struct_wsp}{Wsp}} \&w, int wartosc)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy dana wartość nie występuje w wierszu, kolumnie oraz kwadracie i zwraca wartość true, w przeciwnym wypadku false. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_ab3d65fe27658b4e1d25d044b3753e903}{zwieksz\+Wartosc}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, \mbox{\hyperlink{struct_wsp}{Wsp}} \&w)
+\begin{DoxyCompactList}\small\item\em Próbuje dopasować kolejne liczby do pola. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_a182ed65dab00f7ff9ce5d668f461a4bc}{rozwiaz}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&wspolrzedne)
+\begin{DoxyCompactList}\small\item\em Funkcja rozwiązująca sudoku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{funkcje_8h_ab2e2edb7821ad8633f5ba616247157b3}{zapisz\+Wynik}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]}, string sciezka)
+\begin{DoxyCompactList}\small\item\em Zapisuje rozwiązane sudoku do pliku tekstowego. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8h_ad8950b66551f81daeb4431c9abb86e2f}{wypisz\+Wynik}} (int tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]})
+\begin{DoxyCompactList}\small\item\em Wypisuje do konsoli planszę sudoku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{funkcje_8h_aff30619adff844bbaeba8078928914d7}\label{funkcje_8h_aff30619adff844bbaeba8078928914d7}} 
+\index{funkcje.h@{funkcje.h}!dodajWsp@{dodajWsp}}
+\index{dodajWsp@{dodajWsp}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{dodajWsp()}{dodajWsp()}}
+{\footnotesize\ttfamily void dodaj\+Wsp (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&}]{wspolrzedne,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Dodaje do wektora współrzędne pola, w którym znajduję się znak ,,x\textquotesingle{}\textquotesingle{} reprezentujący niewypełnione pole w sudoku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em wpsolrzedne} & wektor zawierający dane utworzone na podstawie struktury \mbox{\hyperlink{struct_wsp}{Wsp}} \\
+\hline
+{\em x} & współrzędna kolumny \\
+\hline
+{\em y} & współrzędna wiersza \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a7395ac70acfdbfc5525a243e7bacf8e5}\label{funkcje_8h_a7395ac70acfdbfc5525a243e7bacf8e5}} 
+\index{funkcje.h@{funkcje.h}!istniejeWKolumnie@{istniejeWKolumnie}}
+\index{istniejeWKolumnie@{istniejeWKolumnie}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{istniejeWKolumnie()}{istniejeWKolumnie()}}
+{\footnotesize\ttfamily bool istnieje\+WKolumnie (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{\mbox{\hyperlink{struct_wsp}{Wsp}} \&}]{w,  }\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy dana wartość istnieje w kolumnie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em w} & współrzędne, dla których dla danego wiersza sprawdzane jest czy zadana wartość występuję w kolejnych kolumnach \\
+\hline
+{\em wartosc} & wartość do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a0aa0737350756e0b2c2a0267e9afd642}\label{funkcje_8h_a0aa0737350756e0b2c2a0267e9afd642}} 
+\index{funkcje.h@{funkcje.h}!istniejeWKwadracie@{istniejeWKwadracie}}
+\index{istniejeWKwadracie@{istniejeWKwadracie}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{istniejeWKwadracie()}{istniejeWKwadracie()}}
+{\footnotesize\ttfamily bool istnieje\+WKwadracie (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{\mbox{\hyperlink{struct_wsp}{Wsp}} \&}]{w,  }\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy dana wartość istnieje w kwadracie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em w} & współrzędne, dla których sprawdzane jest czy dana wartość istnieje w kwadracie \\
+\hline
+{\em wartosc} & wartość do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a725139de2082047ef3f76ba198b7418d}\label{funkcje_8h_a725139de2082047ef3f76ba198b7418d}} 
+\index{funkcje.h@{funkcje.h}!istniejeWWierszu@{istniejeWWierszu}}
+\index{istniejeWWierszu@{istniejeWWierszu}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{istniejeWWierszu()}{istniejeWWierszu()}}
+{\footnotesize\ttfamily bool istnieje\+WWierszu (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{\mbox{\hyperlink{struct_wsp}{Wsp}} \&}]{w,  }\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy dana wartość istnieje w wierszu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em w} & współrzędne, dla których dla danej kolumny sprawdzane jest czy zadana wartość występuję w kolejnych wierszach \\
+\hline
+{\em wartosc} & wartość do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a9e4376077942141bc3888a2841e9919f}\label{funkcje_8h_a9e4376077942141bc3888a2841e9919f}} 
+\index{funkcje.h@{funkcje.h}!poczatekKwadratu@{poczatekKwadratu}}
+\index{poczatekKwadratu@{poczatekKwadratu}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{poczatekKwadratu()}{poczatekKwadratu()}}
+{\footnotesize\ttfamily int poczatek\+Kwadratu (\begin{DoxyParamCaption}\item[{int}]{liczba }\end{DoxyParamCaption})}
+
+
+
+Wskazuje gdzie zaczyna się kwadrat, w którym nie mogą powtórzyć się liczby. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em liczba} & sprawdza gdzie dla danej wartość znajduję się początek kwadratu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a182ed65dab00f7ff9ce5d668f461a4bc}\label{funkcje_8h_a182ed65dab00f7ff9ce5d668f461a4bc}} 
+\index{funkcje.h@{funkcje.h}!rozwiaz@{rozwiaz}}
+\index{rozwiaz@{rozwiaz}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{rozwiaz()}{rozwiaz()}}
+{\footnotesize\ttfamily bool rozwiaz (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&}]{wspolrzedne }\end{DoxyParamCaption})}
+
+
+
+Funkcja rozwiązująca sudoku. 
+
+Testuje kolejne możliwe wartośći, dla każdego z pól, które jest nieuzupełnione. Jeśli znajdzie wszystkie poprawne wartości zwraca true i sudoku jest rozwiązane. Jeśli nie można dla któregoś pola znaleźć poprawnej wartości to znaczy, że sudoku jest niepoprawne i funkcja zwraca false. Jeśli nie ma żadnej współrzędnej do rozwiązania, funkcja zwraca false. 
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em wspolrzedne} & współrzędne pól, dla których trzeba znaleźć wartość \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ad7f94d3fd030ce3d2ae3a1a43f805e17}\label{funkcje_8h_ad7f94d3fd030ce3d2ae3a1a43f805e17}} 
+\index{funkcje.h@{funkcje.h}!wartoscPrawidlowa@{wartoscPrawidlowa}}
+\index{wartoscPrawidlowa@{wartoscPrawidlowa}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wartoscPrawidlowa()}{wartoscPrawidlowa()}}
+{\footnotesize\ttfamily bool wartosc\+Prawidlowa (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{\mbox{\hyperlink{struct_wsp}{Wsp}} \&}]{w,  }\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy dana wartość nie występuje w wierszu, kolumnie oraz kwadracie i zwraca wartość true, w przeciwnym wypadku false. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em w} & współrzędne pola, dla którego sprawdzana jest wartość ~\newline
+ \\
+\hline
+{\em wartosc} & wartość do sprawdzenia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a3b2a82748ed6506badd911b52c748174}\label{funkcje_8h_a3b2a82748ed6506badd911b52c748174}} 
+\index{funkcje.h@{funkcje.h}!wczytaj@{wczytaj}}
+\index{wczytaj@{wczytaj}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wczytaj()}{wczytaj()}}
+{\footnotesize\ttfamily bool wczytaj (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&}]{wspolrzedne,  }\item[{string}]{sciezka }\end{DoxyParamCaption})}
+
+
+
+Wczytuje sudoku do rozwiązania. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em wspolrzedne} & wektor, w którym zapisywane są współrzędne niewypełnionych pól sudoku oznaczonych symbolem ,,x\textquotesingle{}\textquotesingle{} \\
+\hline
+{\em sciezka} & ścieżka do wejściowego pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_a6792fc8bfd17bd621b16c47a1e8bd71f}\label{funkcje_8h_a6792fc8bfd17bd621b16c47a1e8bd71f}} 
+\index{funkcje.h@{funkcje.h}!wczytajKomorke@{wczytajKomorke}}
+\index{wczytajKomorke@{wczytajKomorke}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wczytajKomorke()}{wczytajKomorke()}}
+{\footnotesize\ttfamily void wczytaj\+Komorke (\begin{DoxyParamCaption}\item[{ifstream \&}]{plikwe,  }\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{vector$<$ \mbox{\hyperlink{struct_wsp}{Wsp}} $>$ \&}]{wspolrzedne }\end{DoxyParamCaption})}
+
+
+
+Wczytuje z pliku tekstowego wartości znajdujące się w polach planszy sudoku oraz zapisuje współrzędne pól planszy, które trzeba uzupełnić. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plikwe} & plik wejściowy zawierający sudoku do rozwiązania \\
+\hline
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em x} & współrzędna kolumny \\
+\hline
+{\em y} & współrzędna wiersza \\
+\hline
+{\em wspolrzedne} & wektor, w którym zapisywane są współrzędne niewypełnionych pól sudoku oznaczonych symbolem ,,x\textquotesingle{}\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_af8e5df53dd086528cdce188fa348f327}\label{funkcje_8h_af8e5df53dd086528cdce188fa348f327}} 
+\index{funkcje.h@{funkcje.h}!wczytajZnak@{wczytajZnak}}
+\index{wczytajZnak@{wczytajZnak}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wczytajZnak()}{wczytajZnak()}}
+{\footnotesize\ttfamily string wczytaj\+Znak (\begin{DoxyParamCaption}\item[{ifstream \&}]{plik,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Wczytuje kolejny znak z pliku tekstowego oddzielony separatorem \textquotesingle{};\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik} & plik tekstowy zawierający sudoku do rozwiązania \\
+\hline
+{\em x} & współrzędna kolumny \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ad8950b66551f81daeb4431c9abb86e2f}\label{funkcje_8h_ad8950b66551f81daeb4431c9abb86e2f}} 
+\index{funkcje.h@{funkcje.h}!wypiszWynik@{wypiszWynik}}
+\index{wypiszWynik@{wypiszWynik}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypiszWynik()}{wypiszWynik()}}
+{\footnotesize\ttfamily void wypisz\+Wynik (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Wypisuje do konsoli planszę sudoku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ab2e2edb7821ad8633f5ba616247157b3}\label{funkcje_8h_ab2e2edb7821ad8633f5ba616247157b3}} 
+\index{funkcje.h@{funkcje.h}!zapiszWynik@{zapiszWynik}}
+\index{zapiszWynik@{zapiszWynik}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{zapiszWynik()}{zapiszWynik()}}
+{\footnotesize\ttfamily bool zapisz\+Wynik (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{string}]{sciezka }\end{DoxyParamCaption})}
+
+
+
+Zapisuje rozwiązane sudoku do pliku tekstowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em sciezka} & ścieżka do pliku, w którym ma być zapisane rozwiązane sudoku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8h_ab3d65fe27658b4e1d25d044b3753e903}\label{funkcje_8h_ab3d65fe27658b4e1d25d044b3753e903}} 
+\index{funkcje.h@{funkcje.h}!zwiekszWartosc@{zwiekszWartosc}}
+\index{zwiekszWartosc@{zwiekszWartosc}!funkcje.h@{funkcje.h}}
+\doxysubsubsection{\texorpdfstring{zwiekszWartosc()}{zwiekszWartosc()}}
+{\footnotesize\ttfamily bool zwieksz\+Wartosc (\begin{DoxyParamCaption}\item[{int}]{tab\mbox{[}9\mbox{]}\mbox{[}9\mbox{]},  }\item[{\mbox{\hyperlink{struct_wsp}{Wsp}} \&}]{w }\end{DoxyParamCaption})}
+
+
+
+Próbuje dopasować kolejne liczby do pola. 
+
+Jeśli wypróbowana liczba jest prawidłowa, zwraca wartość true, w przeciwnym wypadku funkcja wywołuje samą siebie i sprawdza liczbę o jeden większą. Jeśli dojdzie do liczby większej od 9, zwraca false. 
+\begin{DoxyParams}{Parametry}
+{\em tab} & tablica o rozmiarze 9 na 9 reprezentująca planszę \\
+\hline
+{\em w} & współrzędne pola, dla którego sprawdzana jest wartość \\
+\hline
+\end{DoxyParams}

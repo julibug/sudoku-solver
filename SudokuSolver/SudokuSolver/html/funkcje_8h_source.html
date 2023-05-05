@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>SudokuSolver: Plik źródłowy C:/Users/julia/source/repos/bf7a437d-gr31-repo/projekt/SudokuSolver/SudokuSolver/funkcje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SudokuSolver
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b2f33c71d4aa5e7af42a1ca61ff5af1b.html">source</a></li><li class="navelem"><a class="el" href="dir_da92606663f4ecb03aa66c183f15dac3.html">repos</a></li><li class="navelem"><a class="el" href="dir_23ace91c7db6db0437a3754aaf2586fe.html">bf7a437d-gr31-repo</a></li><li class="navelem"><a class="el" href="dir_d598653b30fdd466cc81bf7156a5bbc6.html">projekt</a></li><li class="navelem"><a class="el" href="dir_4501200ddc9bba3a1239bb90c7dbd639.html">SudokuSolver</a></li><li class="navelem"><a class="el" href="dir_bcbb18563017b76c38032aa829c12351.html">SudokuSolver</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">funkcje.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funkcje_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_wsp.html">   12</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_wsp.html">Wsp</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> x;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> y;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#a7853350b8ca5ff4a3d61ccdd22df1c2d">pomoc</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">string</span> <a class="code" href="funkcje_8h.html#af8e5df53dd086528cdce188fa348f327">wczytajZnak</a>(ifstream&amp; plik, <span class="keywordtype">int</span> x);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#aff30619adff844bbaeba8078928914d7">dodajWsp</a>(<span class="keywordtype">int</span> tab[9][9], vector&lt;Wsp&gt;&amp; wspolrzedne, <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#a6792fc8bfd17bd621b16c47a1e8bd71f">wczytajKomorke</a>(ifstream&amp; plikwe, <span class="keywordtype">int</span> tab[9][9], <span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y, vector&lt;Wsp&gt;&amp; wspolrzedne);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#a3b2a82748ed6506badd911b52c748174">wczytaj</a>(<span class="keywordtype">int</span> tab[9][9], vector&lt;Wsp&gt;&amp; wspolrzedne, <span class="keywordtype">string</span> sciezka);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#a725139de2082047ef3f76ba198b7418d">istniejeWWierszu</a>(<span class="keywordtype">int</span> tab[9][9], <a class="code" href="struct_wsp.html">Wsp</a>&amp; w, <span class="keywordtype">int</span> wartosc);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#a7395ac70acfdbfc5525a243e7bacf8e5">istniejeWKolumnie</a>(<span class="keywordtype">int</span> tab[9][9], <a class="code" href="struct_wsp.html">Wsp</a>&amp; w, <span class="keywordtype">int</span> wartosc);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funkcje_8h.html#a9e4376077942141bc3888a2841e9919f">poczatekKwadratu</a>(<span class="keywordtype">int</span> liczba);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#a0aa0737350756e0b2c2a0267e9afd642">istniejeWKwadracie</a>(<span class="keywordtype">int</span> tab[9][9], <a class="code" href="struct_wsp.html">Wsp</a>&amp; w, <span class="keywordtype">int</span> wartosc);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#ad7f94d3fd030ce3d2ae3a1a43f805e17">wartoscPrawidlowa</a>(<span class="keywordtype">int</span> tab[9][9], <a class="code" href="struct_wsp.html">Wsp</a>&amp; w, <span class="keywordtype">int</span> wartosc);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#ab3d65fe27658b4e1d25d044b3753e903">zwiekszWartosc</a>(<span class="keywordtype">int</span> tab[9][9], <a class="code" href="struct_wsp.html">Wsp</a>&amp; w);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#a182ed65dab00f7ff9ce5d668f461a4bc">rozwiaz</a>(<span class="keywordtype">int</span> tab[9][9], vector&lt;Wsp&gt;&amp; wspolrzedne);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="funkcje_8h.html#ab2e2edb7821ad8633f5ba616247157b3">zapiszWynik</a>(<span class="keywordtype">int</span> tab[9][9], <span class="keywordtype">string</span> sciezka);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#ad8950b66551f81daeb4431c9abb86e2f">wypiszWynik</a>(<span class="keywordtype">int</span> tab[9][9]);</div>
+<div class="ttc" id="afunkcje_8h_html_a0aa0737350756e0b2c2a0267e9afd642"><div class="ttname"><a href="funkcje_8h.html#a0aa0737350756e0b2c2a0267e9afd642">istniejeWKwadracie</a></div><div class="ttdeci">bool istniejeWKwadracie(int tab[9][9], Wsp &amp;w, int wartosc)</div><div class="ttdoc">Sprawdza czy dana wartość istnieje w kwadracie.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:89</div></div>
+<div class="ttc" id="afunkcje_8h_html_a182ed65dab00f7ff9ce5d668f461a4bc"><div class="ttname"><a href="funkcje_8h.html#a182ed65dab00f7ff9ce5d668f461a4bc">rozwiaz</a></div><div class="ttdeci">bool rozwiaz(int tab[9][9], vector&lt; Wsp &gt; &amp;wspolrzedne)</div><div class="ttdoc">Funkcja rozwiązująca sudoku.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:130</div></div>
+<div class="ttc" id="afunkcje_8h_html_a3b2a82748ed6506badd911b52c748174"><div class="ttname"><a href="funkcje_8h.html#a3b2a82748ed6506badd911b52c748174">wczytaj</a></div><div class="ttdeci">bool wczytaj(int tab[9][9], vector&lt; Wsp &gt; &amp;wspolrzedne, string sciezka)</div><div class="ttdoc">Wczytuje sudoku do rozwiązania.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:43</div></div>
+<div class="ttc" id="afunkcje_8h_html_a6792fc8bfd17bd621b16c47a1e8bd71f"><div class="ttname"><a href="funkcje_8h.html#a6792fc8bfd17bd621b16c47a1e8bd71f">wczytajKomorke</a></div><div class="ttdeci">void wczytajKomorke(ifstream &amp;plikwe, int tab[9][9], int x, int y, vector&lt; Wsp &gt; &amp;wspolrzedne)</div><div class="ttdoc">Wczytuje z pliku tekstowego wartości znajdujące się w polach planszy sudoku oraz zapisuje współrzędne...</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:30</div></div>
+<div class="ttc" id="afunkcje_8h_html_a725139de2082047ef3f76ba198b7418d"><div class="ttname"><a href="funkcje_8h.html#a725139de2082047ef3f76ba198b7418d">istniejeWWierszu</a></div><div class="ttdeci">bool istniejeWWierszu(int tab[9][9], Wsp &amp;w, int wartosc)</div><div class="ttdoc">Sprawdza czy dana wartość istnieje w wierszu.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:59</div></div>
+<div class="ttc" id="afunkcje_8h_html_a7395ac70acfdbfc5525a243e7bacf8e5"><div class="ttname"><a href="funkcje_8h.html#a7395ac70acfdbfc5525a243e7bacf8e5">istniejeWKolumnie</a></div><div class="ttdeci">bool istniejeWKolumnie(int tab[9][9], Wsp &amp;w, int wartosc)</div><div class="ttdoc">Sprawdza czy dana wartość istnieje w kolumnie.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:68</div></div>
+<div class="ttc" id="afunkcje_8h_html_a7853350b8ca5ff4a3d61ccdd22df1c2d"><div class="ttname"><a href="funkcje_8h.html#a7853350b8ca5ff4a3d61ccdd22df1c2d">pomoc</a></div><div class="ttdeci">void pomoc()</div><div class="ttdoc">Wyświetla pomoc.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:5</div></div>
+<div class="ttc" id="afunkcje_8h_html_a9e4376077942141bc3888a2841e9919f"><div class="ttname"><a href="funkcje_8h.html#a9e4376077942141bc3888a2841e9919f">poczatekKwadratu</a></div><div class="ttdeci">int poczatekKwadratu(int liczba)</div><div class="ttdoc">Wskazuje gdzie zaczyna się kwadrat, w którym nie mogą powtórzyć się liczby.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:77</div></div>
+<div class="ttc" id="afunkcje_8h_html_ab2e2edb7821ad8633f5ba616247157b3"><div class="ttname"><a href="funkcje_8h.html#ab2e2edb7821ad8633f5ba616247157b3">zapiszWynik</a></div><div class="ttdeci">bool zapiszWynik(int tab[9][9], string sciezka)</div><div class="ttdoc">Zapisuje rozwiązane sudoku do pliku tekstowego.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:147</div></div>
+<div class="ttc" id="afunkcje_8h_html_ab3d65fe27658b4e1d25d044b3753e903"><div class="ttname"><a href="funkcje_8h.html#ab3d65fe27658b4e1d25d044b3753e903">zwiekszWartosc</a></div><div class="ttdeci">bool zwiekszWartosc(int tab[9][9], Wsp &amp;w)</div><div class="ttdoc">Próbuje dopasować kolejne liczby do pola.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:113</div></div>
+<div class="ttc" id="afunkcje_8h_html_ad7f94d3fd030ce3d2ae3a1a43f805e17"><div class="ttname"><a href="funkcje_8h.html#ad7f94d3fd030ce3d2ae3a1a43f805e17">wartoscPrawidlowa</a></div><div class="ttdeci">bool wartoscPrawidlowa(int tab[9][9], Wsp &amp;w, int wartosc)</div><div class="ttdoc">Sprawdza czy dana wartość nie występuje w wierszu, kolumnie oraz kwadracie i zwraca wartość true,...</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:104</div></div>
+<div class="ttc" id="afunkcje_8h_html_ad8950b66551f81daeb4431c9abb86e2f"><div class="ttname"><a href="funkcje_8h.html#ad8950b66551f81daeb4431c9abb86e2f">wypiszWynik</a></div><div class="ttdeci">void wypiszWynik(int tab[9][9])</div><div class="ttdoc">Wypisuje do konsoli planszę sudoku.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:164</div></div>
+<div class="ttc" id="afunkcje_8h_html_af8e5df53dd086528cdce188fa348f327"><div class="ttname"><a href="funkcje_8h.html#af8e5df53dd086528cdce188fa348f327">wczytajZnak</a></div><div class="ttdeci">string wczytajZnak(ifstream &amp;plik, int x)</div><div class="ttdoc">Wczytuje kolejny znak z pliku tekstowego oddzielony separatorem ';'.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:10</div></div>
+<div class="ttc" id="afunkcje_8h_html_aff30619adff844bbaeba8078928914d7"><div class="ttname"><a href="funkcje_8h.html#aff30619adff844bbaeba8078928914d7">dodajWsp</a></div><div class="ttdeci">void dodajWsp(int tab[9][9], vector&lt; Wsp &gt; &amp;wspolrzedne, int x, int y)</div><div class="ttdoc">Dodaje do wektora współrzędne pola, w którym znajduję się znak ,,x'' reprezentujący niewypełnione pol...</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:22</div></div>
+<div class="ttc" id="astruct_wsp_html"><div class="ttname"><a href="struct_wsp.html">Wsp</a></div><div class="ttdoc">struct Wsp Reprezentuje współrzędne zawartości pola planszy sudoku.</div><div class="ttdef"><b>Definition:</b> funkcje.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
